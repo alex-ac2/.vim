@@ -1,3 +1,5 @@
 | Personal Vim Config |
-_______________________
+-----------------------
+
+My personal vim config files
 

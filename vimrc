@@ -28,9 +28,6 @@ Plugin 'scrooloose/syntastic'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-
-execute pathogen#infect()
-
 syntax on
 set background=dark
 "colorscheme solarized

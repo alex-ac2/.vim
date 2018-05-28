@@ -44,8 +44,9 @@ else
 fi
 echo 
 vim +PluginInstall +qall
+echo "Finished installing Vim plugins." 
 echo
-echo "********** COMPLETED **********"
+echo "********** DEPLOYMENT COMPLETED **********"
 echo
 echo "Brought to you by: "
 echo " 

@@ -6,6 +6,14 @@ echo
 
 echo "*** Begin Vim config deployment ***"
 echo 
+echo "------ Update Vim ------"
+echo
+sudo apt-get update
+sudo apt-get -y install vim
+echo
+echo "------ Vim Updated ------"
+echo
+echo
 
 # Check if Vundle is installed
 if [ -e ~/.vim/bundle/Vundle.vim ] 
@@ -37,7 +45,6 @@ fi
 
 echo
 echo "********** COMPLETED **********"
-echo 
 echo
 echo "Brought to you by: "
 echo " 

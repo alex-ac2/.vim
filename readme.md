@@ -8,6 +8,7 @@ My personal vim config files
 [1] Clone Project
     ```
     git clone https://github.com/alex-ac2/.vim.git
+    ```
 
 [2] Change Directory
     ```

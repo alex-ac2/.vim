@@ -42,7 +42,8 @@ else
     echo ".vimrc already exists, remove to create system link"
     echo "Use command 'ln -s ~/.vim/vimrc ~/.vimrc'"
 fi
-
+echo 
+vim +PluginInstall +qall
 echo
 echo "********** COMPLETED **********"
 echo

@@ -11,7 +11,7 @@ Plugin 'VundleVim/Vundle.vim'
 " /// PLUGINS /// 
 " <============================================>
 
-Plugin 'git@github.com:tpope/vim-surround.git'
+Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/nerdTree'
 Plugin 'itchyny/lightline.vim'
 Plugin 'pangloss/vim-javascript'

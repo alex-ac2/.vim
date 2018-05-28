@@ -5,7 +5,7 @@ My personal vim config files
 
 **Deployment:** 
 
-[1] Clone Project
+[1] Clone Project 
     ```
     git clone https://github.com/alex-ac2/.vim.git
     ```
@@ -14,6 +14,7 @@ My personal vim config files
     ```
     cd ~/.vim
     ```
+
 [3] Execute deployment script
     ```
     ./deploy.sh

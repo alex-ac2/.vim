@@ -21,6 +21,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'honza/vim-snippets'
 Plugin 'scrooloose/syntastic'
+Plugin 'junegunn/fzf'
 
 " <============================================>
 

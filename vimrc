@@ -22,6 +22,7 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'honza/vim-snippets'
 Plugin 'scrooloose/syntastic'
 Plugin 'junegunn/fzf'
+Plugin 'Valloric/YouCompleteMe'
 
 " <============================================>
 
@@ -31,7 +32,11 @@ filetype plugin indent on    " required
 
 syntax on
 set background=dark
-"colorscheme solarized
+"set t_Co=256
+"let g:onedark_termcolors=256
+
+"packadd! onedark.vim
+"colorscheme onedark 
 
 filetype plugin indent on
 
@@ -65,6 +70,7 @@ set laststatus=2
 set noshowmode
 
 "Syntastic Settings for New Users
+
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
@@ -93,6 +99,20 @@ set t_Co=256
 set term=screen-256color
 set ruler
 
+set t_ku=^[OA
+set t_kd=^[OB
+set t_kr=^[OC
+set t_kl=^[OD
+
+" Normal mode
+nnoremap <C-j> :m .+1<CR>==
+nnoremap <C-k> :m .-2<CR>==
+" Insert mode
+inoremap <C-j> <ESC>:m .+1<CR>==gi
+inoremap <C-k> <ESC>:m .-2<CR>==gi
+" Visual mode
+vnoremap <C-j> :m '>+1<CR>gv=gv
+vnoremap <C-k> :m '<-2<CR>gv=gv
 
 let mapleader=" "
 

@@ -54,9 +54,7 @@ map <F9> :NERDTreeFind<CR>
 
 "set mouse=a
 let g:NERDTreeMouseMode=3
-
 let g:indentLine_setColors = 0
-
 let g:indentLine_char = 'c'
 
 set tabstop=4

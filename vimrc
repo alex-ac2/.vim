@@ -22,7 +22,7 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'honza/vim-snippets'
 Plugin 'scrooloose/syntastic'
 Plugin 'junegunn/fzf'
-Plugin 'Valloric/YouCompleteMe'
+Plugin 'mattn/emmet-vim'
 
 " <============================================>
 
@@ -102,6 +102,9 @@ set t_ku=^[OA
 set t_kd=^[OB
 set t_kr=^[OC
 set t_kl=^[OD
+
+" Emmet 
+let g:user_emmet_leader_key='<C-y>'
 
 " Normal mode
 nnoremap <C-j> :m .+1<CR>==

@@ -84,6 +84,7 @@ set hlsearch
 set ignorecase
 set incsearch
 set smartcase
+set encoding=utf-8
 
 let maplocalleader = "\\"
 

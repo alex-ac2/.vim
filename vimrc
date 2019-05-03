@@ -68,7 +68,6 @@ set laststatus=2
 set noshowmode
 
 "Syntastic Settings for New Users
-
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
@@ -93,10 +92,18 @@ inoremap kj <esc>
 inoremap <silent>jj <esc>
 inoremap <silent>kk <esc>
 inoremap C-h <L>
+
+" Remap of arrow keys
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
+
 set number
 set t_Co=256
 set term=screen-256color
 set ruler
+set timeout ttimeoutlen=100 timeoutlen=5000
 
 set t_ku=^[OA
 set t_kd=^[OB

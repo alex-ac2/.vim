@@ -94,6 +94,10 @@ else
 fi
 echo
 vim +PluginInstall +qall
+cd ~/.vim/bundle/youcompleteme
+python3 install.py
+echo
+echo
 echo "Finished installing Vim plugins."
 echo
 echo "********** DEPLOYMENT COMPLETED **********"

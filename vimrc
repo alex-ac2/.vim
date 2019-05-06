@@ -93,22 +93,31 @@ inoremap <silent>jj <esc>
 inoremap <silent>kk <esc>
 inoremap C-h <L>
 
+
+set notimeout
+set nottimeout
+
 " Remap of arrow keys
-noremap <Up> <Nop>
-noremap <Down> <Nop>
-noremap <Left> <Nop>
-noremap <Right> <Nop>
+set <up>=OA
+set <down>=OB
+set <right>=OC
+set <left>=OD
+
+map <Up> <Nop>
+map <Down> <Nop>
+map <Right> <Nop>
+map <Left> <Nop>
 
 set number
 set t_Co=256
 set term=screen-256color
 set ruler
-set timeout ttimeoutlen=100 timeoutlen=5000
+set bs=2
 
-set t_ku=^[OA
-set t_kd=^[OB
-set t_kr=^[OC
-set t_kl=^[OD
+"set t_ku=^[OA
+"set t_kd=^[OB
+"set t_kr=^[OC
+"set t_kl=^[OD
 
 " Emmet 
 let g:user_emmet_leader_key='<C-y>'

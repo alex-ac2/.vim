@@ -52,7 +52,7 @@ then
         cd ~
         sudo apt install build-essential cmake python3-dev
         git clone https://github.com/vim/vim.git
-        cd vim
+        cd ~/vim
         ./configure --with-features=huge \
             --enable-multibyte \
             --enable-rubyinterp=yes \

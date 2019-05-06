@@ -23,6 +23,7 @@ Plugin 'honza/vim-snippets'
 Plugin 'scrooloose/syntastic'
 Plugin 'junegunn/fzf'
 Plugin 'mattn/emmet-vim'
+Plugin 'valloric/youcompleteme'
 
 " <============================================>
 

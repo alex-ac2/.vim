@@ -20,7 +20,7 @@ then
 fi
 echo
 echo
-echo "------ Update Vim ------"
+echo "------ Update Vim & dependencies------"
 echo
 # Update for Mac
 if [[ $os_system == "darwin"* ]]
@@ -42,6 +42,7 @@ fi
 if [[ $os_system == "linux"* ]]
 then
     cd ~
+    sudo apt install build-essential cmake python3-dev
     git clone https://github.com/vim/vim.git
     cd vim
     ./configure --with-features=huge \

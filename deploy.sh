@@ -48,6 +48,7 @@ then
         echo "Vim is up to date."
         echo
     else
+        sudo apt remove vim vim-runtime gvim
         cd ~
         sudo apt install build-essential cmake python3-dev
         git clone https://github.com/vim/vim.git

@@ -14,7 +14,7 @@ then
   echo "You're using a Mac computer."
 fi
 
-if [[ $os_system == "linux"* ]]
+if [[ $os_system == "linux-gnu"* ]]
 then
   echo "You're using a Linux computer."
 fi

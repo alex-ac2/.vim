@@ -58,12 +58,13 @@ let g:NERDTreeMouseMode=3
 let g:indentLine_setColors = 0
 let g:indentLine_char = 'c'
 
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 
-set colorcolumn=80,100
-hi ColorColumn ctermbg=lightmagenta  guibg=lightmagenta
+" Column guide
+"set colorcolumn=80,100
+"hi ColorColumn ctermbg=DarkGray guibg=DarkGray
 
 set laststatus=2
 set noshowmode
@@ -77,8 +78,11 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_javascript_checkers = ['jshint']
 let g:syntastic_javascript_eslint_exe = 'npm run lint --'
+let g:syntastic_quiet_messages = {
+        \ "!level":  "errors",
+        \ "type": "style" }
 
 set hlsearch
 set ignorecase
@@ -97,12 +101,16 @@ inoremap C-h <L>
 
 set notimeout
 set nottimeout
-
+nmap <Up> <NOP>
+nmap <Down> <NOP>
+nmap <Left> <NOP>
+nmap <Right> <NOP>
 " Remap of arrow keys
 set <up>=OA
 set <down>=OB
 set <right>=OC
 set <left>=OD
+
 
 map <Up> <Nop>
 map <Down> <Nop>
@@ -114,6 +122,8 @@ set t_Co=256
 set term=screen-256color
 set ruler
 set bs=2
+set pastetoggle=<F2>
+au BufNewFile,BufRead *.ejs set filetype=html
 
 "set t_ku=^[OA
 "set t_kd=^[OB
